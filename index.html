@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/621fad85a9.js" crossorigin="anonymous"></script>
+    <title>Figuras geométricas</title>
 </head>
 <body>
-    
+    <div class="h1"><h1>Figuras Geométricas</h1></div>
+<section class="contenedor">
+    <div class="contenido-cuadrado">
+        <div class="imagen"><i class="fa-solid fa-circle"></i></div>
+        <div class="h1"><h1>Cuadrado</h1></div>
+        <div class="formulario">
+            <label for="InputCuadrado">Escrbe cuanto mide el lado en cm</label>
+            <input id="InputCuadrado" type="number" placeholder="lado"/>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+            
+        </div>
+    </div>
+
+    <div class="contenido-circulo">
+        <div class="imagen"><i class="fa-solid fa-square"></i></div>
+        <div class="h1"><h1>Circulo</h1></div>
+        <div class="formulario">
+            <label for="InputRadio">Escrbe cuanto mide el lado en cm</label>
+            <input id="InputRadio" type="number" placeholder="lado"/>
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+            
+        </div>
+    </div>
+
+    <div class="contenido-triangulo">
+        <div class="imagen"><i class="fa-regular fa-triangle"></i></div>
+        <div class="h1"><h1>Triangulo</h1></div>
+        <div class="formulario">
+            <label for="InputTriangulo">Escrbe cuanto mide uno de los lados en cm</label>
+            <input id="InputCuadrado" type="number" placeholder="lado"/>
+            <label for="InputCuadrado">Escrbe cuanto mide otro de sus lados en cm</label>
+            <input id="InputCuadrado" type="number" placeholder="lado"/>
+            <label for="InputCuadrado">Escrbe cuanto mide la base en cm</label>
+            <input id="InputCuadrado" type="number" placeholder="lado"/>
+            <label for="InputCuadrado">Escrbe cuanto mide la altura en cm</label>
+            <input id="InputCuadrado" type="number" placeholder="lado"/>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+            
+        </div>
+    </div>
+</section>
+
+
+<script src="./main.js"></script>    
 </body>
 </html>
